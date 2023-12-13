@@ -13,4 +13,11 @@ Finding the right government schemes can be a struggle.Navigating complex websit
 <br> 
 <b>Stay Updated:</b>Keep track of the latest scheme launches and amendments with our curated newsfeed.
 <br>
+<h3>Specific features:</h3>
+<b>Unique seach tools:</b>Mention any advanced search functionalities like natural languagea query processing or AI-powered recommendations.
+<br>
+<b>Data visualizations:</b>If you incorporate infoggraphics or charts for easier understanding,showcase them as a benefit.
+<br>
+<b>Personalized dashboards:</b>if you custom dashboards for user-specific scheme recommendations,elaborare on this feature.
+<br>
 
