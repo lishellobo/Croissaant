@@ -1,0 +1,119 @@
+body{
+    background-color:black;
+    padding:0;
+    margin-top:25px;
+    margin-left:0;
+    margin-right:0;
+}
+
+.top-buttons{
+    margin-left:1200px;
+    margin-top:0;
+    margin-top:0px;
+}
+   
+    
+.logandsign{
+    background-color:black;
+    color:rgb(233, 41, 82);
+    cursor:pointer;
+    border-color:white;
+    margin-bottom:30px;
+    padding:10px;
+    transition:background-color 0.15s,color 0.15s;
+}
+
+.logandsign:hover{
+    background-color:rgb(233, 41, 82);
+    color:black;
+}
+    
+
+.top{
+    background:url(bg7.jpg) ;
+    height:350px;
+
+}
+
+.text{
+    color: black;
+    
+    font-size:120px;
+    padding-left: 50px;
+    margin:0;
+    padding-top:60px;
+    padding-bottom:0;
+    margin-bottom: 0;
+    
+}
+
+.description{
+    color:white;
+    
+    margin-top: 0;
+    font-size:50px;
+    padding-left:60px;
+    
+}
+
+.para2{
+    color:white;
+    margin-left:450px;
+    font-size:30px;
+    margin-top: 110px;
+    width:450px;
+    text-align:center;
+    margin-bottom:0;
+}
+
+.para3{
+    width:450px;
+    margin-left:500px;
+    color:white;
+    font-size:20px;
+    margin-top: 5px;
+    text-align:center;
+}
+
+.choice-box{
+    width:500px;
+    margin-left:40px;
+    margin-top:200px;
+    background-color:rgb(209, 72, 38);
+    padding:20px;
+}
+.sentence{
+    color:black;
+    padding-top:5px;
+    padding-bottom:0;
+    font-size:26px;
+    text-align:center;
+    margin-bottom:0;
+}
+
+.choice-button{
+    margin-left:17px;
+    margin-top:5px;
+    padding:5px;
+    text-align:center;
+    
+}
+
+.choice{
+    background-color:black;
+    color:rgb(209, 72, 38);
+    padding:5px;
+    font-size:20px;
+    border:0;
+    cursor:pointer;
+    border-radius:5px;
+    margin:0.5px;
+    transition:opacity 0.15s,color 0.15s;
+}
+
+.choice:hover{
+    opacity:75%;
+    color:white;
+}
+
+    
