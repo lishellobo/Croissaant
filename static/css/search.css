@@ -1,0 +1,36 @@
+.questions{
+    display: inline-block;
+    border: 5px;
+    border-color: black;
+    background-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkbox{
+    display:inline-block;
+    background-color: blueviolet;
+}
+.box{
+    display: inline-block;
+    
+    margin: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: yellow;
+}
+
+.container{
+    background-image:linear-gradient(rgb(249, 249, 249), rgb(181, 181, 56));
+}
+
+.nav-item{
+    border-radius: 5px;
+    background-color:rgba(66, 66, 239, 0.997);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+.nav-item:hover{
+    background-color: white;
+    color: rgba(66, 66, 239, 0.997);
+}
