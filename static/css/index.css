@@ -1,0 +1,47 @@
+.search-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    float:right;
+    
+  }
+
+  .search-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #2ecc71; /* Green button color */
+    color: #fff; /* White text color on the button */
+    cursor: pointer;
+    float:right;
+    
+  }
+
+  .search-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+
+  .sign-in-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3498db; /* Blue button color */
+    color: #fff; /* White text color on the button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .sign-in-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+
+  }
