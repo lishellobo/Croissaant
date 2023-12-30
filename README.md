@@ -1,4 +1,4 @@
-# Croissaant
+# CivicsSift
 
 <h2><b>Finding government Schemes made Easy!</b></h2>
 <br>
