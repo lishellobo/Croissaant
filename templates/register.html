@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="/static/css/login.css">
+  <title>register</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/register.css">
 </head>
 <body>
   <header class="head">
@@ -13,21 +13,26 @@
     <h1 class="civics-text">CivicSift</h1>
   </header>
   <div class="wrapper">
-    <div class="form-wrapper sign-in">
+    <div class="form-wrapper sign-up">
       <form method="POST">
-        <h2>Login</h2>
+        <h2>Sign Up</h2>
         <div class="input-group">
           <input type="text" id="username" name="username" required>
           <label for="username">Username</label>
         </div>
         <div class="input-group">
-          <input type="password" id="password1" name="password1" required>
-          <label for="password1">Password</label>
+          <input type="email"id="email" name="email" required>
+          <label for="email">Email</label>
         </div>
-        <button class="bn" type="submit">Login</button>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required>
+          <label for="password">Password</label>
+        </div>
+        <button class="bn" type="submit">Sign Up</button>
         <div class="signUp-link">
-          <p>Don't have an account? <a href="{{url_for(register.html)}}" class="signUpBtn-link">Sign Up</a></p>
+          <p>Already have an account? <a href="{{url_for(login)}}" class="signInBtn-link">Sign In</a></p>
         </div>
       </form>
     </div>
+  <script src="/static/js/login.js"></script>
 </html>
