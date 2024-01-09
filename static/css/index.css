@@ -98,4 +98,26 @@ transform: translateY(-10px);
  transform-origin: center bottom;
   animation-fill-mode: forwards; /* Keeps the element in the final state of the animation */
 }
+.heading{
+    font-size: 50px;
+    text-align: center;
+    }
 
+   .head{
+    margin-bottom:30px;
+   }
+   .info{
+    font-size:27px;
+    text-align:center;
+  }
+  .info2{
+    padding-top:20px;
+    font-size:27px;
+    text-align:center;
+  }
+
+  .text-box{
+    width:50%;
+    padding-left:25%;
+    ;
+  }
