@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_mysqldb import MySQL
+import mysql.connector
 import MySQLdb.cursors
 import re
+import mysql
 
 app=Flask(__name__)
 app.secret_key = 'ket'
@@ -58,8 +60,7 @@ def register():
             mesage = 'You have successfully registered !'
     elif request.method == 'POST':
         mesage = 'Please fill out the form !'
-    return render_template('register.html', mesage = mesage)
-
+    return render_template('login.html', mesage = mesage)
 
 if __name__=='__main__':
     app.run(debug=True)

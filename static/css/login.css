@@ -25,7 +25,6 @@ header{
   border-radius: 50px;
   font-style: aries;
   cursor: pointer;
-  transition: background-color 0.3 ease;
   float:right;
 }
 .wrapper {
@@ -52,17 +51,7 @@ header{
   height: 100%;
   transition: 1s ease-in-out;
 }
-.wrapper.active .form-wrapper.sign-in {
-  transform: translateY(-450px);
-}
-.wrapper .form-wrapper.sign-up {
-  position: absolute;
-  top: 450px;
-  left: 0;
-}
-.wrapper.active .form-wrapper.sign-up {
-  transform: translateY(-450px);
-}
+
 h2 {
   font-size: 30px;
   color: #fff;
@@ -83,6 +72,7 @@ h2 {
   pointer-events: none;
   transition: .5s;
 }
+
 .input-group input {
   width: 320px;
   height: 40px;
@@ -93,6 +83,7 @@ h2 {
   border: none;
   outline: none;
 }
+
 .input-group input:focus~label,
 .input-group input:valid~label {
   top: -5px;
@@ -118,7 +109,7 @@ h2 {
   margin: 15px 0;
 }
 .signUp-link p {
-  color: #f5f5f5;
+  color: #ffffff;
 }
 .signUp-link p a {
   color: rgb(252, 252, 252);
@@ -126,5 +117,5 @@ h2 {
   font-weight: 500;
 }
 .signUp-link p a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
