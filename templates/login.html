@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="/static/css/login.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
   <header class="head">
@@ -14,18 +13,18 @@
     <h1 class="civics-text">CivicSift</h1>
   </header>
   {% if mesage is defined and mesage %}
-      <div class="alert alert-warning" style="margin: auto;">{{ mesage }}</div>
+      <div class="alert alert-warning">{{ mesage }}</div>
     {% endif %}
   <div class="wrapper">
     <div class="form-wrapper sign-in">
       <form action="{{ url_for('login') }}" method="POST">
         <h2>Login</h2>
         <div class="input-group">
-          <input type="text" class="form-group" id="username" name="username" required>
-          <label for="username">Username</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <label for="name">Username</label>
         </div>
         <div class="input-group">
-          <input type="password" class="form-group" id="password1" name="password1" required>
+          <input type="password" class="form-control" id="password" name="password" required>
           <label for="password1">Password</label>
         </div>
         <button class="bn" type="submit">Login</button>
