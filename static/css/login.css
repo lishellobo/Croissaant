@@ -13,10 +13,7 @@ header{
   font-family: "Poppins";
   font-size: 1rem;
   padding: 1rem;
-  width: 60%;
-  border-radius:20px;
-  border-radius:20px;
-margin: auto;
+  width: 100%;
 }
 
 .sign-in-button{
@@ -36,7 +33,7 @@ margin: auto;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 400px;
+  width: 500px;
   height: 500px;
   background: #290025;
   box-shadow: 0 0 50px rgb(255, 255, 255);
