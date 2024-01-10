@@ -1,71 +1,71 @@
-from flask import Flask, render_template, request, redirect, url_for, session
-from flask_mysqldb import MySQL
-import mysql.connector
-import MySQLdb.cursors
+from flask import Flask, render_template, request, session
+from flask_sqlalchemy import SQLAlchemy
 import re
-import mysql
 
-app=Flask(__name__)
+app = Flask(__name__)
 app.secret_key = 'ket'
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'user-system'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:HwzsqdcjsodCQ5Qs@db.djaqphyiavlljtllpurl.supabase.co:5432/postgres'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)    
 
-mysql=MySQL(app)
-
-@app.route("/",)
+class User(db.Model):
+    __tablename__ = 'user-system' 
+    userid = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255), nullable=False, unique=True)
+    password = db.Column(db.String(255), nullable=False)
+    
+@app.route("/")
 def home():
     return render_template("login.html")
 
-@app.route('/login.html', methods =['GET', 'POST'])
+@app.route('/login.html', methods=['GET', 'POST'])
 def login():
-    mesage = ''
+    message = ''
     if request.method == 'POST' and 'name' in request.form and 'password' in request.form:
         name = request.form['name']
         password = request.form['password']
-        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM user WHERE name = % s AND password = % s', (name, password, ))
-        user = cursor.fetchone()
+        user = User.query.filter_by(name=name, password=password).first()
         if user:
             session['loggedin'] = True
-            session['userid'] = user['userid']
-            session['name'] = user['name']
-            session['email'] = user['email']
-            mesage = 'Logged in successfully !'
-            return render_template('index.html', mesage = mesage)
+            session['userid'] = user.userid
+            session['name'] = user.name
+            session['email'] = user.email
+            message = 'Logged in successfully!'
+            return render_template('index.html', message=message)
         else:
-            mesage = 'Please enter correct email / password !'
-    return render_template("login.html", mesage = mesage)
+            message = 'Please enter correct email / password !'
+    return render_template("login.html", message=message)
 
-@app.route('/register.html', methods =['GET', 'POST'])
+@app.route('/register.html', methods=['GET', 'POST'])
 def register():
-    mesage = ''
-    if request.method == 'POST' and 'name' in request.form and 'password' in request.form and 'email' in request.form :
-        userName = request.form['name']
+    message = ''
+    if request.method == 'POST' and 'name' in request.form and 'password' in request.form and 'email' in request.form:
+        user_name = request.form['name']
         password = request.form['password']
         email = request.form['email']
-        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM user WHERE email = % s', (email, ))
-        account = cursor.fetchone()
-        if account:
-            mesage = 'Account already exists !'
+
+        existing_user = User.query.filter_by(email=email).first()
+        if existing_user:
+            message = 'Account already exists!'
         elif not re.match(r'[^@]+@[^@]+\.[^@]+', email):
-            mesage = 'Invalid email address !'
-        elif not userName or not password or not email:
-            mesage = 'Please fill out the form !'
+            message = 'Invalid email address!'
+        elif not user_name or not password or not email:
+            message = 'Please fill out the form!'
         else:
-            cursor.execute('INSERT INTO user VALUES (NULL, % s, % s, % s)', (userName, email, password, ))
-            mysql.connection.commit()
-            mesage = 'You have successfully registered !'
+            new_user = User(name=user_name, email=email, password=password)
+            db.session.add(new_user)
+            db.session.commit()
+            message = 'You have successfully registered!'
     elif request.method == 'POST':
-        mesage = 'Please fill out the form !'
-    return render_template('register.html', mesage = mesage)
+        message = 'Please fill out the form!'
+    return render_template('register.html', message=message)
 
 @app.route("/search.html")
 def search():
     return render_template("search.html")
 
-if __name__=='__main__':
+if __name__ == '__main__':
+    #db.create_all()
     app.run(debug=True)
