@@ -12,11 +12,5 @@ Finding the right government schemes can be a struggle.Navigating complex websit
 <b>Detailed guides:</b>Get step-by-step instructions on applying for each scheme,including required documents and applications deadlines.
 <br> 
 
-<h3>Specific features:</h3>
-<b>Unique seach tools:</b>Mention any advanced search functionalities like natural languagea query processing or AI-powered recommendations.
-<br>
-<b>Data visualizations:</b>If you incorporate infoggraphics or charts for easier understanding,showcase them as a benefit.
-<br>
-<b>Personalized dashboards:</b>if you custom dashboards for user-specific scheme recommendations,elaborare on this feature.
-<br>
+
 
