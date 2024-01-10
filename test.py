@@ -82,6 +82,46 @@ def table():
     return render_template("trans.html", headings=headings, data=dataT)
 
 
+headings =("SchemeID", "SchemeName", "EligibilityCriteria", "Details", "Benefits", "StartDate", "EndDate", "Department")
+dataS = (
+    (1, 'Education for All', 'Students pursuing primary, secondary, or higher education', 'Provides financial assistance and support for educational expenses', 'Scholarship funds, educational resources, mentorship programs', '2024-06-01', '2025-05-31', 'Ministry of Education'),
+
+    (2, 'STEM Scholarship Program', 'Students pursuing Science, Technology, Engineering, and Mathematics (STEM) fields', 'Encourages and supports students in STEM disciplines', 'Scholarship funds, research opportunities, industry connections', '2024-07-01', '2024-12-31', 'Ministry of Science and Technology'),
+
+    (3, 'Skill Development for Students', 'Students seeking vocational training and skill development', 'Facilitates training programs for employable skills', 'Vocational training, job placement assistance, career counseling', '2024-08-01', '2025-07-31', 'Ministry of Skill Development'),
+
+    (4, 'Digital Literacy Initiative', 'Students aiming to enhance digital skills', 'Promotes digital literacy and technological proficiency', 'Training in digital technologies, access to digital resources', '2024-09-01', '2025-08-31', 'Ministry of Information Technology'),
+
+    (5, 'Environmental Awareness Campaign', 'Students interested in environmental conservation', 'Creates awareness and promotes sustainable practices', 'Educational workshops, tree planting campaigns', '2024-10-01', '2025-05-31', 'Ministry of Environment'),
+
+    (6, 'Student Health and Wellness Program', 'All students in educational institutions', 'Focuses on promoting physical and mental health among students', 'Health check-ups, counseling services, wellness activities', '2024-11-01', '2024-11-30', 'Ministry of Health'),
+
+    (7, 'Art and Culture Scholarships', 'Students pursuing degrees in arts and culture', 'Supports artistic and cultural endeavors of students', 'Scholarship funds, exhibition opportunities', '2025-01-01', '2025-01-31', 'Ministry of Culture'),
+
+    (8, 'Sports Development Initiative', 'Students with a passion for sports', 'Promotes sports participation and development', 'Sports training, participation in tournaments', '2025-02-01', '2025-02-28', 'Ministry of Youth Affairs and Sports'),
+
+    (9, 'Community Service Learning', 'Students interested in community service', 'Encourages students to engage in community-oriented projects', 'Community service projects, volunteer opportunities', '2025-03-01', '2025-03-31', 'Ministry of Social Welfare'),
+
+    (10, 'Entrepreneurship Development for Students', 'Aspiring student entrepreneurs', 'Facilitates entrepreneurship training and support', 'Startup grants, mentorship programs', '2025-04-01', '2025-04-30', 'Ministry of Small and Medium Enterprises'),
+
+    (11, 'International Exchange Program', 'Students seeking international exposure', 'Provides opportunities for studying abroad and cultural exchange', 'Study abroad programs, cross-cultural experiences', '2025-05-01', '2025-05-31', 'Ministry of Foreign Affairs'),
+
+    (12, 'Innovation and Research Grants', 'Students engaged in innovative research projects', 'Supports student-led research and innovation', 'Research grants, access to laboratories', '2025-06-01', '2025-06-30', 'Ministry of Research and Development'),
+
+    (13, 'Literary and Writing Competitions', 'Students interested in literature and writing', 'Promotes literary skills and creativity', 'Literary competitions, publication opportunities', '2025-07-01', '2025-07-31', 'Ministry of Education'),
+
+    (14, 'Diversity and Inclusion Awareness', 'Students advocating for diversity and inclusion', 'Raises awareness and fosters inclusivity on campuses', 'Workshops, events, awareness campaigns', '2025-08-01', '2025-08-31', 'Ministry of Social Justice'),
+
+    (15, 'Technology Innovation Challenge', 'Students interested in technological innovation', 'Encourages students to develop innovative technological solutions', 'Technology challenges, recognition for innovations', '2025-09-01', '2025-09-30', 'Ministry of Science and Technology')
+)
+
+@app.route("/")
+def table():
+
+    return render_template("student.html", headings=headings, data=dataS)
+
+
+
 
 
 
