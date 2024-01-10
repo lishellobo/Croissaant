@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="static/css/databse.css">
 </head>
 <body>
-    <table>
-        <tr>
+    <table class="table">
+        <tr class="table__header">
             {% for header in headings %}
             <th>{{ header }}</th>
             {% endfor %}
         </tr>
         {% for row in dataT %}
-        <tr>
+        <tr class="table__row">
             {% for cell in row %}
-            <td>{{ cell }} </td>
+            <td class="table__cell">{{ cell }} </td>
             {% endfor %}
         </tr>
         {% endfor%}
@@ -24,3 +24,4 @@
     </table>
 </body>
 </html>
+

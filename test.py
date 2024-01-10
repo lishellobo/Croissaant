@@ -135,18 +135,18 @@ dataF = (
 def table():
     return render_template("women.html", headings=headings, dataW=dataW)
 
-@app.route("/")
-def table():
-    return render_template("trans.html", headings=headings, dataT=dataT)
+# @app.route("/")
+# def table():
+#     return render_template("trans.html", headings=headings, dataT=dataT)
 
 
-@app.route("/")
-def table():
-    return render_template("student.html", headings=headings, dataS=dataS)
+# @app.route("/")
+# def table():
+#     return render_template("student.html", headings=headings, dataS=dataS)
 
-@app.route("/")
-def table():
-    return render_template("farmer.html", headings=headings, dataF=dataF)
+# @app.route("/")
+# def table():
+#     return render_template("farmer.html", headings=headings, dataF=dataF)
 
 
 
