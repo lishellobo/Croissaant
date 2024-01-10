@@ -1,0 +1,40 @@
+.wrapper {
+   
+    color:white;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #290025;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  .about{
+    
+    color:white;
+    font-size:40px;
+    align-items:center;
+  }
+
+  p{
+    width:500px;
+    color:white;
+    font-size:25px;
+  }
+
+  .forspace{
+    align-items:center;
+    justify-content: center;
+    padding-left:25%;
+  }
+
+  
+  
+  
