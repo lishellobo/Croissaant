@@ -17,7 +17,7 @@ mysql=MySQL(app)
 
 @app.route("/",)
 def home():
-    return render_template("index.html")
+    return render_template("login.html")
 
 @app.route('/login.html', methods =['GET', 'POST'])
 def login():
