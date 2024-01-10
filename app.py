@@ -306,85 +306,87 @@ def trans9():
 def trans10():
     return render_template('trans5.html')
 
-# @app.route("/trans1.html")
-# def trans1():
-#     return render_template('trans1.html')
 
-# @app.route("/trans2.html")
-# def trans2():
-#     return render_template('trans2.html')
 
-# @app.route("/trans3.html")
-# def trans3():
-#     return render_template('trans3.html')
+@app.route("/student1.html")
+def student1():
+    return render_template('student1.html')
 
-# @app.route("/trans4.html")
-# def trans4():
-#     return render_template('trans4.html')
+@app.route("/student2.html")
+def student2():
+    return render_template('student2.html')
 
-# @app.route("/trans5.html")
-# def trans5():
-#     return render_template('trans5.html')
+@app.route("/student3.html")
+def student3():
+    return render_template('student3.html')
 
-# @app.route("/trans6.html")
-# def trans6():
-#     return render_template('trans1.html')
+@app.route("/student4.html")
+def student4():
+    return render_template('student4.html')
 
-# @app.route("/trans7.html")
-# def trans7():
-#     return render_template('trans2.html')
+@app.route("/student5.html")
+def student5():
+    return render_template('student5.html')
 
-# @app.route("/trans8.html")
-# def trans8():
-#     return render_template('trans3.html')
+@app.route("/student6.html")
+def student6():
+    return render_template('student1.html')
 
-# @app.route("/trans9")
-# def trans9():
-#     return render_template('trans4.html')
+@app.route("/student7.html")
+def student7():
+    return render_template('student2.html')
 
-# @app.route("/trans10.html")
-# def trans10():
-#     return render_template('trans5.html')
+@app.route("/student8.html")
+def student8():
+    return render_template('student3.html')
 
-# @app.route("/trans1.html")
-# def trans1():
-#     return render_template('trans1.html')
+@app.route("/student9")
+def student9():
+    return render_template('student4.html')
 
-# @app.route("/trans2.html")
-# def trans2():
-#     return render_template('trans2.html')
+@app.route("/student10.html")
+def student10():
+    return render_template('student5.html')
 
-# @app.route("/trans3.html")
-# def trans3():
-#     return render_template('trans3.html')
+@app.route("/farmer1.html")
+def farmer1():
+    return render_template('farmer1.html')
 
-# @app.route("/trans4.html")
-# def trans4():
-#     return render_template('trans4.html')
+@app.route("/farmer2.html")
+def farmer2():
+    return render_template('farmer2.html')
 
-# @app.route("/trans5.html")
-# def trans5():
-#     return render_template('trans5.html')
+@app.route("/farmer3.html")
+def farmer3():
+    return render_template('farmer3.html')
 
-# @app.route("/trans6.html")
-# def trans6():
-#     return render_template('trans1.html')
+@app.route("/farmer4.html")
+def farmer4():
+    return render_template('farmer4.html')
 
-# @app.route("/trans7.html")
-# def trans7():
-#     return render_template('trans2.html')
+@app.route("/farmer5.html")
+def farmer5():
+    return render_template('farmer5.html')
 
-# @app.route("/trans8.html")
-# def trans8():
-#     return render_template('trans3.html')
+@app.route("/farmer6.html")
+def farmer6():
+    return render_template('farmer1.html')
 
-# @app.route("/trans9")
-# def trans9():
-#     return render_template('trans4.html')
+@app.route("/farmer7.html")
+def farmer7():
+    return render_template('farmer2.html')
 
-# @app.route("/trans10.html")
-# def trans10():
-#     return render_template('trans5.html')
+@app.route("/farmer8.html")
+def farmer8():
+    return render_template('farmer3.html')
+
+@app.route("/farmer9")
+def farmer9():
+    return render_template('farmer4.html')
+
+@app.route("/farmer10.html")
+def farmer10():
+    return render_template('farmer5.html')
 
 
 if __name__ == '__main__':
