@@ -222,6 +222,171 @@ def farmer():
 def student():
     return render_template("student.html", headings=headings, dataS=dataS)
 
+@app.route("/catalogue.html")
+def catalogue():
+    return render_template('catalog.html')
+
+@app.route("/woman1.html")
+def woman1():
+    return render_template('women1.html')
+
+@app.route("/woman2.html")
+def woman2():
+    return render_template('women2.html')
+
+@app.route("/woman3.html")
+def woman3():
+    return render_template('women3.html')
+
+@app.route("/woman4.html")
+def woman4():
+    return render_template('women4.html')
+
+@app.route("/woman5.html")
+def woman5():
+    return render_template('women5.html')
+
+@app.route("/woman6.html")
+def woman6():
+    return render_template('women6.html')
+
+@app.route("/woman7.html")
+def woman7():
+    return render_template('women7.html')
+
+@app.route("/woman8.html")
+def woman8():
+    return render_template('women8.html')
+
+@app.route("/woman9.html")
+def woman9():
+    return render_template('women9.html')
+
+@app.route("/woman10.html")
+def woman10():
+    return render_template('women10.html')
+
+@app.route("/trans1.html")
+def trans1():
+    return render_template('trans1.html')
+
+@app.route("/trans2.html")
+def trans2():
+    return render_template('trans2.html')
+
+@app.route("/trans3.html")
+def trans3():
+    return render_template('trans3.html')
+
+@app.route("/trans4.html")
+def trans4():
+    return render_template('trans4.html')
+
+@app.route("/trans5.html")
+def trans5():
+    return render_template('trans5.html')
+
+@app.route("/trans6.html")
+def trans6():
+    return render_template('trans1.html')
+
+@app.route("/trans7.html")
+def trans7():
+    return render_template('trans2.html')
+
+@app.route("/trans8.html")
+def trans8():
+    return render_template('trans3.html')
+
+@app.route("/trans9")
+def trans9():
+    return render_template('trans4.html')
+
+@app.route("/trans10.html")
+def trans10():
+    return render_template('trans5.html')
+
+# @app.route("/trans1.html")
+# def trans1():
+#     return render_template('trans1.html')
+
+# @app.route("/trans2.html")
+# def trans2():
+#     return render_template('trans2.html')
+
+# @app.route("/trans3.html")
+# def trans3():
+#     return render_template('trans3.html')
+
+# @app.route("/trans4.html")
+# def trans4():
+#     return render_template('trans4.html')
+
+# @app.route("/trans5.html")
+# def trans5():
+#     return render_template('trans5.html')
+
+# @app.route("/trans6.html")
+# def trans6():
+#     return render_template('trans1.html')
+
+# @app.route("/trans7.html")
+# def trans7():
+#     return render_template('trans2.html')
+
+# @app.route("/trans8.html")
+# def trans8():
+#     return render_template('trans3.html')
+
+# @app.route("/trans9")
+# def trans9():
+#     return render_template('trans4.html')
+
+# @app.route("/trans10.html")
+# def trans10():
+#     return render_template('trans5.html')
+
+# @app.route("/trans1.html")
+# def trans1():
+#     return render_template('trans1.html')
+
+# @app.route("/trans2.html")
+# def trans2():
+#     return render_template('trans2.html')
+
+# @app.route("/trans3.html")
+# def trans3():
+#     return render_template('trans3.html')
+
+# @app.route("/trans4.html")
+# def trans4():
+#     return render_template('trans4.html')
+
+# @app.route("/trans5.html")
+# def trans5():
+#     return render_template('trans5.html')
+
+# @app.route("/trans6.html")
+# def trans6():
+#     return render_template('trans1.html')
+
+# @app.route("/trans7.html")
+# def trans7():
+#     return render_template('trans2.html')
+
+# @app.route("/trans8.html")
+# def trans8():
+#     return render_template('trans3.html')
+
+# @app.route("/trans9")
+# def trans9():
+#     return render_template('trans4.html')
+
+# @app.route("/trans10.html")
+# def trans10():
+#     return render_template('trans5.html')
+
+
 if __name__ == '__main__':
     #db.create_all()
     app.run(debug=True)
