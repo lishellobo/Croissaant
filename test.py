@@ -36,14 +36,6 @@ dataW = (
 
     (15, 'Women''s Mental Health Initiative', 'Women dealing with mental health challenges', 'Addresses mental health issues and provides support', 'Counseling services, awareness campaigns', '2025-09-01', '2025-09-30', 'Ministry of Health')
 )
-
-@app.route("/")
-def table():
-
-    return render_template("women.html", headings=headings, data=dataW)
-
-
-headings =("SchemeID", "SchemeName", "EligibilityCriteria", "Details", "Benefits", "StartDate", "EndDate", "Department")
 dataT = (
      (1, 'Transgender Education Scholarship', 'Transgender individuals pursuing higher education', 'Provides financial assistance for tuition and living expenses', 'Scholarship funds, mentorship programs', '2024-06-01', '2025-05-31', 'Ministry of Education'),
 
@@ -65,7 +57,7 @@ dataT = (
 
     (10, 'Transgender Skill Development in Arts', 'Transgender individuals interested in arts and culture', 'Supports skill development in various artistic disciplines', 'Workshops, exhibitions, cultural events', '2025-04-01', '2025-04-30', 'Ministry of Culture'),
 
-    (11, 'Transgender Community Health Clinics', 'All transgender individuals', 'Establishes community health clinics for transgender-specific healthcare', 'Primary care, counseling services, outreach programs', '2025-05-01', '2025-05-31', 'Ministry of Health')
+    (11, 'Transgender Community Health Clinics', 'All transgender individuals', 'Establishes community health clinics for transgender-specific healthcare', 'Primary care, counseling services, outreach programs', '2025-05-01', '2025-05-31', 'Ministry of Health'),
 
     (12, 'Transgender Employment Equality Initiative', 'Transgender individuals in the workforce', 'Promotes equal employment opportunities and workplace inclusion', 'Employment workshops, diversity training for companies', '2025-06-01', '2025-06-30', 'Ministry of Labor'),
 
@@ -75,14 +67,6 @@ dataT = (
 
     (15, 'Transgender Arts and Culture Festival', 'All transgender individuals with an interest in arts and culture', 'Celebrates transgender creativity and diversity through a cultural festival', 'Art exhibitions, performances, workshops', '2025-09-01', '2025-09-30', 'Ministry of Culture')
 )
-
-@app.route("/")
-def table():
-
-    return render_template("trans.html", headings=headings, data=dataT)
-
-
-headings =("SchemeID", "SchemeName", "EligibilityCriteria", "Details", "Benefits", "StartDate", "EndDate", "Department")
 dataS = (
     (1, 'Education for All', 'Students pursuing primary, secondary, or higher education', 'Provides financial assistance and support for educational expenses', 'Scholarship funds, educational resources, mentorship programs', '2024-06-01', '2025-05-31', 'Ministry of Education'),
 
@@ -114,14 +98,6 @@ dataS = (
 
     (15, 'Technology Innovation Challenge', 'Students interested in technological innovation', 'Encourages students to develop innovative technological solutions', 'Technology challenges, recognition for innovations', '2025-09-01', '2025-09-30', 'Ministry of Science and Technology')
 )
-
-@app.route("/")
-def table():
-
-    return render_template("student.html", headings=headings, data=dataS)
-
-
-headings =("SchemeID", "SchemeName", "EligibilityCriteria", "Details", "Benefits", "StartDate", "EndDate", "Department")
 dataF = (
     (1, 'Crop Insurance Program', 'Farmers with cultivated land', 'Provides insurance coverage for crops', 'Compensation for crop losses due to natural disasters', '2024-06-01', '2025-05-31', 'Ministry of Agriculture'),
 
@@ -154,10 +130,24 @@ dataF = (
     (15, 'Integrated Pest Management', 'Farmers dealing with pest issues', 'Promotes sustainable pest management practices', 'Training, organic pest control methods', '2025-09-01', '2025-09-30', 'Ministry of Agriculture')
 )
 
+
 @app.route("/")
 def table():
+    return render_template("women.html", headings=headings, dataW=dataW)
 
-    return render_template("farmer.html", headings=headings, data=dataF)
+
+# @app.route("/")
+# def table():
+#     return render_template("trans.html", headings=headings, dataT=dataT)
+
+
+# @app.route("/")
+# def table():
+#     return render_template("student.html", headings=headings, dataS=dataS)
+
+# @app.route("/")
+# def table():
+#     return render_template("farmer.html", headings=headings, dataF=dataF)
 
 
 
