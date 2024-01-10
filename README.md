@@ -11,8 +11,7 @@ Finding the right government schemes can be a struggle.Navigating complex websit
 <br>
 <b>Detailed guides:</b>Get step-by-step instructions on applying for each scheme,including required documents and applications deadlines.
 <br> 
-<b>Stay Updated:</b>Keep track of the latest scheme launches and amendments with our curated newsfeed.
-<br>
+
 <h3>Specific features:</h3>
 <b>Unique seach tools:</b>Mention any advanced search functionalities like natural languagea query processing or AI-powered recommendations.
 <br>
