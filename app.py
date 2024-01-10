@@ -15,14 +15,14 @@ class User(db.Model):
     name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), nullable=False, unique=True)
     password = db.Column(db.String(255), nullable=False)
-    
+      
 @app.route("/")
 def home():
     return render_template("login.html")
 
 @app.route('/login.html', methods=['GET', 'POST'])
 def login():
-    message = ''
+    mesage = ''
     if request.method == 'POST' and 'name' in request.form and 'password' in request.form:
         name = request.form['name']
         password = request.form['password']
@@ -32,15 +32,15 @@ def login():
             session['userid'] = user.userid
             session['name'] = user.name
             session['email'] = user.email
-            message = 'Logged in successfully!'
-            return render_template('index.html', message=message)
+            mesage = 'Logged in successfully!'
+            return render_template('index.html', mesage=mesage)
         else:
-            message = 'Please enter correct email / password !'
-    return render_template("login.html", message=message)
+            mesage = 'Please enter you correct credentials if registered, if not please register'
+    return render_template("login.html", mesage=mesage)
 
 @app.route('/register.html', methods=['GET', 'POST'])
 def register():
-    message = ''
+    mesage = ''
     if request.method == 'POST' and 'name' in request.form and 'password' in request.form and 'email' in request.form:
         user_name = request.form['name']
         password = request.form['password']
@@ -48,19 +48,19 @@ def register():
 
         existing_user = User.query.filter_by(email=email).first()
         if existing_user:
-            message = 'Account already exists!'
+            mesage = 'Account already exists!'
         elif not re.match(r'[^@]+@[^@]+\.[^@]+', email):
-            message = 'Invalid email address!'
+            mesage = 'Invalid email address!'
         elif not user_name or not password or not email:
-            message = 'Please fill out the form!'
+            mesage = 'Please fill out the form!'
         else:
             new_user = User(name=user_name, email=email, password=password)
             db.session.add(new_user)
             db.session.commit()
-            message = 'You have successfully registered!'
+            mesage = 'You have successfully registered!'
     elif request.method == 'POST':
-        message = 'Please fill out the form!'
-    return render_template('register.html', message=message)
+        mesage = 'Please fill out the form!'
+    return render_template('register.html', mesage=mesage)
 
 @app.route("/search.html")
 def search():
