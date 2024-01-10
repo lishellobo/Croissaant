@@ -17,16 +17,16 @@ mysql=MySQL(app)
 
 @app.route("/",)
 def home():
-    return render_template("index.html")
+    return render_template("login.html")
 
 @app.route('/login.html', methods =['GET', 'POST'])
 def login():
     mesage = ''
-    if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
-        email = request.form['email']
+    if request.method == 'POST' and 'name' in request.form and 'password' in request.form:
+        name = request.form['name']
         password = request.form['password']
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM user WHERE email = % s AND password = % s', (email, password, ))
+        cursor.execute('SELECT * FROM user WHERE name = % s AND password = % s', (name, password, ))
         user = cursor.fetchone()
         if user:
             session['loggedin'] = True
