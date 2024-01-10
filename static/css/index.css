@@ -24,7 +24,7 @@ header{
   font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  font-style: aries;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: background-color 0.3 ease;
   float:right;
@@ -32,6 +32,7 @@ header{
 .civics-text{
   font-size: 50px;
   padding-top: 2px;
+  padding-left: 100px;
 }
 .tagline{
   font-size: 25px;
