@@ -121,7 +121,43 @@ def table():
     return render_template("student.html", headings=headings, data=dataS)
 
 
+headings =("SchemeID", "SchemeName", "EligibilityCriteria", "Details", "Benefits", "StartDate", "EndDate", "Department")
+dataF = (
+    (1, 'Crop Insurance Program', 'Farmers with cultivated land', 'Provides insurance coverage for crops', 'Compensation for crop losses due to natural disasters', '2024-06-01', '2025-05-31', 'Ministry of Agriculture'),
 
+    (2, 'Modern Agricultural Equipment Subsidy', 'Farmers in need of agricultural machinery', 'Subsidizes the purchase of modern farming equipment', 'Reduced cost of agricultural machinery', '2024-07-01', '2024-12-31', 'Ministry of Agriculture'),
+
+    (3, 'Soil Health Improvement Initiative', 'Farmers interested in soil health', 'Promotes soil health and fertility improvement', 'Free soil testing, subsidies for soil amendments', '2024-08-01', '2025-07-31', 'Ministry of Agriculture'),
+
+    (4, 'Drought-Resistant Crop Development', 'Farmers in drought-prone regions', 'Encourages cultivation of drought-resistant crops', 'Seeds and support for drought-resistant crop varieties', '2024-09-01', '2025-08-31', 'Ministry of Agriculture'),
+
+    (5, 'Organic Farming Promotion', 'Farmers transitioning to organic farming', 'Promotes and supports organic farming practices', 'Training, certification support, marketing assistance', '2024-10-01', '2025-05-31', 'Ministry of Agriculture'),
+
+    (6, 'Water Conservation Grants', 'Farmers implementing water conservation practices', 'Supports initiatives for water-efficient farming', 'Financial assistance for water conservation projects', '2024-11-01', '2024-11-30', 'Ministry of Agriculture'),
+
+    (7, 'Market Linkage and Export Support', 'Farmers looking to expand market reach', 'Facilitates access to markets and export opportunities', 'Market linkages, export subsidies', '2025-01-01', '2025-01-31', 'Ministry of Commerce'),
+
+    (8, 'Livestock Health and Vaccination Program', 'Farmers with livestock', 'Ensures the health and vaccination of livestock', 'Free veterinary services, vaccination campaigns', '2025-02-01', '2025-02-28', 'Ministry of Agriculture'),
+
+    (9, 'Agricultural Extension Services', 'Farmers seeking expert advice', 'Provides agricultural extension services', 'Access to agricultural experts, workshops, training', '2025-03-01', '2025-03-31', 'Ministry of Agriculture'),
+
+    (10, 'Farmers'' Market Infrastructure Development', 'Farmers involved in direct selling', 'Develops infrastructure for farmers'' markets', 'Market infrastructure, storage facilities', '2025-04-01', '2025-04-30', 'Ministry of Agriculture'),
+
+    (11, 'Farmers'' Training and Skill Development', 'Farmers interested in skill enhancement', 'Enhances farmers'' skills in various agricultural practices', 'Training programs, skill development workshops', '2025-05-01', '2025-05-31', 'Ministry of Agriculture'),
+
+    (12, 'Climate-Resilient Agriculture', 'Farmers in climate-vulnerable areas', 'Promotes climate-resilient agricultural practices', 'Seeds, technologies, and practices for climate resilience', '2025-06-01', '2025-06-30', 'Ministry of Agriculture'),
+
+    (13, 'Horticulture Development Scheme', 'Farmers involved in horticulture', 'Supports the development of horticultural practices', 'Training, subsidies for horticultural crops', '2025-07-01', '2025-07-31', 'Ministry of Agriculture'),
+
+    (14, 'Farm Pond Construction Program', 'Farmers interested in water storage', 'Encourages construction of farm ponds for water storage', 'Financial assistance for farm pond construction', '2025-08-01', '2025-08-31', 'Ministry of Agriculture'),
+
+    (15, 'Integrated Pest Management', 'Farmers dealing with pest issues', 'Promotes sustainable pest management practices', 'Training, organic pest control methods', '2025-09-01', '2025-09-30', 'Ministry of Agriculture')
+)
+
+@app.route("/")
+def table():
+
+    return render_template("farmer.html", headings=headings, data=dataF)
 
 
 
