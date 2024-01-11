@@ -306,8 +306,6 @@ def trans9():
 def trans10():
     return render_template('trans5.html')
 
-
-
 @app.route("/student1.html")
 def student1():
     return render_template('student1.html')
