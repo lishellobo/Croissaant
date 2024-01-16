@@ -203,8 +203,6 @@ def submit_form():
         return redirect('/farmer.html')
     elif selected_option == 'Students':
         return redirect('/student.html')
-    else:
-        return redirect('/')
 
 @app.route("/women.html")
 def woman():
@@ -346,6 +344,8 @@ def student9():
 def student10():
     return render_template('student5.html')
 
+print(f'hello {1}')
+
 @app.route("/farmer1.html")
 def farmer1():
     return render_template('farmer1.html')
@@ -393,5 +393,7 @@ def about():
 @app.route("/contact.html")
 def contact():
     return render_template("contact.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
