@@ -224,167 +224,21 @@ def student():
 def catalogue():
     return render_template('catalog.html')
 
-@app.route("/woman1.html")
-def woman1():
-    return render_template('women1.html')
+@app.route("/womann/<int:index>")
+def womann(index):
+    return render_template(f'women{index}.html')
 
-@app.route("/woman2.html")
-def woman2():
-    return render_template('women2.html')
+@app.route("/transs/<int:index>")
+def transs(index):
+    return render_template(f"trans{index}.html")
 
-@app.route("/woman3.html")
-def woman3():
-    return render_template('women3.html')
+@app.route("/farmerr/<int:index>")
+def farmerr(index):
+    return render_template(f"farmer{index}.html")
 
-@app.route("/woman4.html")
-def woman4():
-    return render_template('women4.html')
-
-@app.route("/woman5.html")
-def woman5():
-    return render_template('women5.html')
-
-@app.route("/woman6.html")
-def woman6():
-    return render_template('women6.html')
-
-@app.route("/woman7.html")
-def woman7():
-    return render_template('women7.html')
-
-@app.route("/woman8.html")
-def woman8():
-    return render_template('women8.html')
-
-@app.route("/woman9.html")
-def woman9():
-    return render_template('women9.html')
-
-@app.route("/woman10.html")
-def woman10():
-    return render_template('women10.html')
-
-@app.route("/trans1.html")
-def trans1():
-    return render_template('trans1.html')
-
-@app.route("/trans2.html")
-def trans2():
-    return render_template('trans2.html')
-
-@app.route("/trans3.html")
-def trans3():
-    return render_template('trans3.html')
-
-@app.route("/trans4.html")
-def trans4():
-    return render_template('trans4.html')
-
-@app.route("/trans5.html")
-def trans5():
-    return render_template('trans5.html')
-
-@app.route("/trans6.html")
-def trans6():
-    return render_template('trans1.html')
-
-@app.route("/trans7.html")
-def trans7():
-    return render_template('trans2.html')
-
-@app.route("/trans8.html")
-def trans8():
-    return render_template('trans3.html')
-
-@app.route("/trans9")
-def trans9():
-    return render_template('trans4.html')
-
-@app.route("/trans10.html")
-def trans10():
-    return render_template('trans5.html')
-
-@app.route("/student1.html")
-def student1():
-    return render_template('student1.html')
-
-@app.route("/student2.html")
-def student2():
-    return render_template('student2.html')
-
-@app.route("/student3.html")
-def student3():
-    return render_template('student3.html')
-
-@app.route("/student4.html")
-def student4():
-    return render_template('student4.html')
-
-@app.route("/student5.html")
-def student5():
-    return render_template('student5.html')
-
-@app.route("/student6.html")
-def student6():
-    return render_template('student1.html')
-
-@app.route("/student7.html")
-def student7():
-    return render_template('student2.html')
-
-@app.route("/student8.html")
-def student8():
-    return render_template('student3.html')
-
-@app.route("/student9")
-def student9():
-    return render_template('student4.html')
-
-@app.route("/student10.html")
-def student10():
-    return render_template('student5.html')
-
-print(f'hello {1}')
-
-@app.route("/farmer1.html")
-def farmer1():
-    return render_template('farmer1.html')
-
-@app.route("/farmer2.html")
-def farmer2():
-    return render_template('farmer2.html')
-
-@app.route("/farmer3.html")
-def farmer3():
-    return render_template('farmer3.html')
-
-@app.route("/farmer4.html")
-def farmer4():
-    return render_template('farmer4.html')
-
-@app.route("/farmer5.html")
-def farmer5():
-    return render_template('farmer5.html')
-
-@app.route("/farmer6.html")
-def farmer6():
-    return render_template('farmer1.html')
-
-@app.route("/farmer7.html")
-def farmer7():
-    return render_template('farmer2.html')
-
-@app.route("/farmer8.html")
-def farmer8():
-    return render_template('farmer3.html')
-
-@app.route("/farmer9")
-def farmer9():
-    return render_template('farmer4.html')
-
-@app.route("/farmer10.html")
-def farmer10():
-    return render_template('farmer5.html')
+@app.route("/studentss/<int:index>")
+def studentss(index):
+    return render_template(f"student{index}.html")
 
 @app.route("/about.html")
 def about():
